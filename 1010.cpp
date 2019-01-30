@@ -32,7 +32,7 @@ int main() {
     int id, radix;
     cin >> l >> r >> id >> radix;
     if(id == 2) swap(l, r);
-    ll num = toNum(l, radix, 1e15);
+    ll num = toNum(l, radix, 1e18);
     int res = -1;
     ll min_b = -1, max_b = 1e18;
     for(auto c : r) min_b = max((ll)ConvertC(c) + 1, min_b);
